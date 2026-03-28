@@ -5,21 +5,21 @@ on:
     branches: [main]
 
 
-  jobs:
-    build:
-      runs-on: ubuntu-latest
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
 
-      steps:
-        - name: Checkout código
-          uses: actions/checkout@v4
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
 
 
-        - name: INstalar Python
-          uses: actions/setup-python@v5
-          with:
-            python-version: '3.11'
+      - name: INstalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
 
-        - name: Ejecutar app
-          run: python app.py
+      - name: Ejecutar app
+        run: python app.py

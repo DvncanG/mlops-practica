@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    container_name: mi-app
+
+  db:
+    image: postgres:15
+    container_name: mi-db
+    environment:
+      POSTGRES_PASSWORD: password123
